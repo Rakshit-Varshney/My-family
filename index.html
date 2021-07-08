@@ -1,0 +1,23 @@
+<head>
+    <script>
+        var images=["https://unfinishedcrosses.com/wp-content/uploads/2018/01/ScriptFamily10.jpg","https://us.123rf.com/450wm/kinokotagawa/kinokotagawa1712/kinokotagawa171200465/91961518-mom-wearing-short-sleeve-clothes-is-pointing.jpg?ver=6","https://www.how-to-draw-funny-cartoons.com/images/cartoon-dad-005.jpg","https://lh3.googleusercontent.com/proxy/Kp_0uiphkRmJ2FIp0YQjzQjTAIkSmbey0_xLyD_XxQyF5xTnyWLiSwVDSKX-ReoUSYikheaf-21ANJcTc-zTCAw","https://st.depositphotos.com/1077687/1903/v/950/depositphotos_19036597-stock-illustration-cartoon-boy.jpg"];
+        var names=["my family","mom/Surbhi Gupta","dad/Ravindra Varshney","brother/Pratyush Varshney","me/Rakshit Varshney"]
+        var i = 0;
+        function update(){
+            i++;
+            var numbers_of_family_member_in_array = 4
+            if(i > numbers_of_family_member_in_array ){
+                i = 0;
+            }
+            var updateImage = images[i];
+            var updateName = names[i];
+            document.getElementById("family_member_image").src = updateImage;
+            document.getElementById("family_member_name").innerHTML = updateName;
+        }
+    </script> 
+    <h1>My Family Book</h1>
+    <img src="https://unfinishedcrosses.com/wp-content/uploads/2018/01/ScriptFamily10.jpg" style="width: 30%" id="family_member_image">
+    <h4 id="family_member_name">hi</h4>
+    <button onclick="update();">Next</button>
+
+    </head>
